@@ -13,6 +13,9 @@ html {
     background-color: #42A1EC;
     min-width: 60px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .sidebar-list {
         padding-left: 0;
@@ -106,10 +109,10 @@ html {
                 margin: 0 auto;
 
                 .queue-ticket__info {
-                    font-size: 30px;
+                    font-size: 60px;
 
                     &:first-child {
-                        font-size: 50px;
+                        font-size: 40px;
                     }
                 }
             }
@@ -119,6 +122,22 @@ html {
             display: flex;
             justify-content: center;
         }
+    }
+}
+
+.display-queue {
+
+    .display-queue__info {
+        font-size: 150px;
+
+        &:first-child {
+            font-size: 30px;
+        }
+    }
+
+    .b-badge {
+        font-size: 16px;
+        padding: 10px 30px;
     }
 }
 
@@ -148,6 +167,16 @@ html {
     &:hover,
     &:focus {
         color: #ffffff;
+    }
+}
+
+.link-red {
+    color: #C94656;
+
+    &:active,
+    &:hover,
+    &:focus {
+        color: #C94656;
     }
 }
 
@@ -183,6 +212,23 @@ button {
         font-size: 2rem;
         font-weight: 300;
         outline: none;
+    }
+}
+
+.display-wrapper {
+    min-height: 100%;
+}
+
+.b-login {
+    .b-login__header {
+        background-color: #ffffff;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .b-login__img {
+            height: 30px;
+        }
     }
 }
 
