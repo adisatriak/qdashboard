@@ -1,0 +1,201 @@
+/* Main Style */
+body,
+html {
+    background-color: #f7f7f7;
+    height: 100%;
+    color: #303030;
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sidebar-nav {
+    position: fixed;
+    background-color: #42A1EC;
+    min-width: 60px;
+    height: 100%;
+
+    .sidebar-list {
+        padding-left: 0;
+        list-style: none;
+
+        .sidebar-list__item {
+            padding: 20px 0;
+
+            .sidebar-list__link {
+                font-size: 28px;
+                padding: 25px;
+                vertical-align: middle;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: #3592dc;;
+                }
+            }
+        }
+    }
+}
+
+.service-area {
+    margin-left: 80px;
+    height: calc(100% - 55px);
+    min-height: calc(100% - 55px);
+    box-sizing: border-box;
+    display: block;
+
+    .toolbar {
+        padding: 15px 15px 0 15px;
+        position: relative;
+        user-select: none;
+        min-height: 36px;
+    }
+}
+
+.wrapper {
+    padding: 15px;
+    height: 100%;
+    position: relative;
+
+    .queue-list {
+        position: relative;
+        background: #fff;
+        border: none;
+        min-height: 100% !important;
+        height: auto;
+        overflow: hidden;
+        user-select: none;
+
+        .queue-list__container {
+            overflow: hidden;
+            overflow-y: auto;
+            height: calc(100vh - 200px);
+            margin-bottom: 80px;
+
+            .queue-list__item {
+                &.no-queue {
+                    color: #7D7979;
+                    font-size: 16px;
+                    text-align: center;
+                    margin-top: 100px;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    display: block;
+                }
+            }
+        }
+
+        .queue-list__button {
+            text-align: center;
+        }
+    }
+
+    .queue-entry {
+        overflow: hidden;
+        height: 100%;
+
+        .queue-entry__container {
+            margin-top: 150px;
+            font-weight: bold;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transform: translate(0);
+            transition: transform .5s ease-out;
+
+            .queue-ticket {
+                margin: 0 auto;
+
+                .queue-ticket__info {
+                    font-size: 30px;
+
+                    &:first-child {
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+
+        .queue-entry__button {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.card--blue {
+    background-color: #42A1EC;
+    color: #ffffff;
+}
+
+.btn-green {
+    background: #41D6C3;
+    border: 1px solid #41D6C3;
+    color: #FFFFFF;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background: #3abfae;
+        color: #FFFFFF;
+        border: 1px solid #3abfae;
+    }
+}
+
+.link-white {
+    color: #ffffff;
+
+    &:active,
+    &:hover,
+    &:focus {
+        color: #ffffff;
+    }
+}
+
+.group-btn > {
+    .btn {
+        &:last-child {
+            border-top-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+        }
+    }
+}
+
+.b-badge {
+    border-radius: 30px;
+    padding: 6px 20px;
+}
+
+.b-badge--outline {			
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-weight: bold
+}
+
+.b-badge--green {
+    background: rgba($color: #81CF87, $alpha: .2);
+    color: #81CF87;
+    font-weight: bold
+}
+
+button {
+    &.close {
+        font-size: 2rem;
+        font-weight: 300;
+        outline: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-nav {
+        display: none;
+    }
+
+    .service-area {
+        margin: 0;
+    }
+
+    .queue-entry__container {
+        margin-top: 0 !important;
+    }
+}

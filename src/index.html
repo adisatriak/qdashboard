@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar-nav">
+        <ul class="sidebar-list text-center">
+            <li class="sidebar-list__item mt-auto">
+                <a href="http://" class="link-white">
+                    <img src="http://i.pravatar.cc/300" alt="" class="sidebar-list__img rounded-circle img-fluid" width="30"
+                        height="30">
+                </a>
+            </li>
+            <li class="sidebar-list__item">
+                <a href="http://" class="sidebar-list__link link-white" data-toggle="tooltip" data-placement="right"
+                    title="Some tooltip text!">
+                    <span class="icon ion-ios-options"></span>
+                </a>
+            </li>
+            <li class="sidebar-list__item">
+                <a href="http://" class="sidebar-list__link link-white" data-toggle="tooltip" data-placement="right"
+                    title="Some tooltip text!">
+                    <i class="icon ion-ios-chatbubbles"></i>
+                </a>
+            </li>
+            <li class="sidebar-list__item">
+                <a href="http://" class="sidebar-list__link link-white" data-toggle="tooltip" data-placement="right"
+                    title="Some tooltip text!">
+                    <i class="icon ion-ios-pulse"></i>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="service-area">
+        <section class="toolbar">
+            <div class="row justify-content-between flex-row">
+                <div class="col-12 col-md-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Lines</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>All Lines</option>
+                            <option value="">Main Service</option>
+                            <option value="">Information</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect02">Desk</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect02">
+                            <option selected>No Desk</option>
+                            <option value="">Desk 1</option>
+                            <option value="">Desk 2</option>
+                            <option value="">Desk 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <div class="row h-100">
+                <div class="col-12 col-md-4">
+                    <div class="queue-list card">
+                        <div class="queue-list__body card-body d-flex flex-column p-0">
+
+                            <div class="queue-list__container">
+                                <!-- <div class="queue-list__item no-queue">No visitors waiting</div> -->
+                                <div class="queue-list__item">
+                                    <div class="list-group list-group-flush">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="mb-1">John</h5>
+                                                <small><span><i class="icon ion-ios-alarm"></i> 27 min</span></small>
+                                            </div>
+                                            <div class="queue-list__info">Doe</div>
+                                            <div class="queue-list__info">0857 4756 4474</div>
+                                            <span class="b-badge b-badge--green badge badge-pill badge-info mt-2">label</span>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="mb-1">John</h5>
+                                                <small><span><i class="icon ion-ios-alarm"></i> 27 min</span></small>
+                                            </div>
+                                            <div class="queue-list__info">Doe</div>
+                                            <div class="queue-list__info">0857 4756 4474</div>
+                                            <span class="b-badge b-badge--green badge badge-pill badge-info mt-2">label</span>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="mb-1">John</h5>
+                                                <small><span><i class="icon ion-ios-alarm"></i> 27 min</span></small>
+                                            </div>
+                                            <div class="queue-list__info">Doe</div>
+                                            <div class="queue-list__info">0857 4756 4474</div>
+                                            <span class="b-badge b-badge--green badge badge-pill badge-info mt-2">label</span>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="mb-1">John</h5>
+                                                <small><span><i class="icon ion-ios-alarm"></i> 27 min</span></small>
+                                            </div>
+                                            <div class="queue-list__info">Doe</div>
+                                            <div class="queue-list__info">0857 4756 4474</div>
+                                            <span class="b-badge b-badge--green badge badge-pill badge-info mt-2">label</span>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between">
+                                                <h5 class="mb-1">John</h5>
+                                                <small><span><i class="icon ion-ios-alarm"></i> 27 min</span></small>
+                                            </div>
+                                            <div class="queue-list__info">Doe</div>
+                                            <div class="queue-list__info">0857 4756 4474</div>
+                                            <span class="b-badge b-badge--green badge badge-pill badge-info mt-2">label</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="queue-list__button mt-auto">
+                                <button type="button" class="btn btn-green" data-toggle="modal" data-target="#queueModal">Add
+                                    Visitor</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="queue-entry card card--blue">
+                        <div class="queue-entry__body card-body d-flex flex-column justify-content-center">
+
+                            <div class="queue-entry__container">
+                                <div class="queue-ticket text-center">
+                                    <div class="queue-ticket__info d-block">John</div>
+                                    <div class="queue-ticket__info d-block">Doe</div>
+                                    <div class="queue-ticket__info d-block">0857 4756 4474</div>
+                                    <span class="b-badge b-badge--outline badge badge-pill badge-info mt-2">label</span>
+                                </div>
+                            </div>
+
+                            <div class="queue-entry__button mt-auto">
+                                <div class="input-group justify-content-center">
+                                    <div class="group-btn input-group-prepend">
+                                        <button type="button" class="btn btn-green dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Call Again</a>
+                                            <a class="dropdown-item" href="#">No Show</a>
+                                            <a class="dropdown-item" href="#">Mark Served</a>
+                                            <a class="dropdown-item" href="#">Return to Queue</a>
+                                            <a class="dropdown-item" href="#">Forward</a>
+                                            <div role="separator" class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Edit</a>
+                                            <a class="dropdown-item" href="#">Label</a>
+                                        </div>
+                                        <button type="button" class="btn btn-green">Call Next</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="queueModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">First Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneNumber">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="addLabel">Label</label>
+                                <input type="text" class="form-control" id="addLabel">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-green">Add to queue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
